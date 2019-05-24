@@ -1,0 +1,50 @@
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 245px;
+    grid-gap: 10px;
+
+    @media all and (min-width: 768px) {
+        grid-template-columns: repeat(3, 245px);
+    }
+    @media all and (min-width: 1200px) {
+        grid-template-columns: repeat(5, 1fr);
+
+    }   
+}
+
+.list__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+.image__container {
+    border: 15px solid rgb(159, 120, 23);
+    width: 163px;
+    height: 227px;
+    background-size: cover;
+    background-position: center;
+}
+.item__img {
+    height: 0;
+    width: 0;
+}
+.house__shield {
+    height: 50px;
+    width: 50px;
+}
+.house__img{
+    height: 50px;
+    width: 50px;
+}
+
+.item__name {
+    font-size: 22px;
+}
+// item__house
+// item__info

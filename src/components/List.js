@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
+import './List.scss';
 
 class List extends React.Component {
        
@@ -17,10 +18,15 @@ class List extends React.Component {
               .map(item => {
                   return (
                     <li key={item.id} className="list__item">
-                      <img src={item.image} alt={item.name} className="item__img"/>
+                        <div className="image__container" style={{backgroundImage: `url(${item.image})`}}>
+                            <img src={item.image} alt={item.name} className="item__img"/>
+                        </div>
                       <h2 className="item__name">{item.name}</h2>
-                      <p className="item__house">{item.house}</p>
-                      <Link to= {`/Character/${item.id}`}>Más info</Link>
+                      <div className="house__shield">
+                        <img className="house__img" src={item.houseImg} alt={item.house} />
+                      </div>
+                      <p className="item__house">{item.house ? `Casa: ${item.house}`: 'No pertenece a ninguna casa'}</p>
+                      <Link to= {`/Character/${item.id}`} className="item__info">Más info</Link>
                     </li>
                   );
                 })
