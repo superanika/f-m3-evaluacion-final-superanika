@@ -3,6 +3,7 @@ import './App.css';
 import Home from './components/Home';
 import {Switch, Route} from 'react-router-dom';
 import Character from './components/Character';
+import {fetchCharacters} from './services/Fetch'
 
 
 class App extends React.Component {
@@ -18,8 +19,7 @@ class App extends React.Component {
   }
 
   getCharacters() {
-    fetch('http://hp-api.herokuapp.com/api/characters')
-      .then(response => response.json())
+    fetchCharacters()
       .then(data => {
         
         const newData = data.map((item, index) => {
