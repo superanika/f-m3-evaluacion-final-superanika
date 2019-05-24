@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 class Character extends React.Component {
 
@@ -8,7 +9,8 @@ class Character extends React.Component {
         const {info}= this.props;
         const {id}= this.props.match.params;
         return (
-                info.characters.map(item => {
+            <div className="wrapper">
+                {info.characters.map(item => {
                     if(id === item.id){
                         return (
                             <div key={item.id} className="details">
@@ -21,7 +23,9 @@ class Character extends React.Component {
                             </div>
                         );
                     }
-                })
+                })}
+                <Link to='/'>Volver</Link>
+            </div>
 
             
         );
