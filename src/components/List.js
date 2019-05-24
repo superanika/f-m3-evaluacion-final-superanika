@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 class List extends React.Component {
        
@@ -28,4 +29,9 @@ class List extends React.Component {
         );
     }
 }
+
+List.propTypes = {
+    info: PropTypes.object
+}
+
 export default List;

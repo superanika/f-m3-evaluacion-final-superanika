@@ -43,8 +43,6 @@ class App extends React.Component {
     })
   }
 
-  //hacer la funcion reset filter
-
   render () {
 
     return (

@@ -1,9 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 class Character extends React.Component {
-
-  //poner el reset filter
 
     render () {
         const {info}= this.props;
@@ -23,12 +22,17 @@ class Character extends React.Component {
                             </div>
                         );
                     }
+                    return true;
                 })}
                 <Link to='/'>Volver</Link>
             </div>
-
-            
         );
     }
 }
+
+Character.propTypes = {
+    info: PropTypes.object,
+    id: PropTypes.number
+}
+
 export default Character;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Filter extends React.Component {
     render () {
@@ -11,4 +12,9 @@ class Filter extends React.Component {
         );
     }
 }
+
+Filter.propTypes = {
+    info: PropTypes.object
+}
+
 export default Filter; 
