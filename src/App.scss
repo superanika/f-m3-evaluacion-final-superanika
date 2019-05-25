@@ -2,21 +2,19 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-image: url(./images/wall.jpg);
   background-size: contain;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 .title {
   margin: 0;
 }
 .logo {
-  width: 70vw;
-  margin-top: 10px;
-  @media all and (min-width: 768px) {
-    width: 40vw;
-
-  }
+  width: 300px;
+ 
 }
 
