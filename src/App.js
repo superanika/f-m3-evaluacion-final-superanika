@@ -4,10 +4,11 @@ import Home from './components/Home';
 import {Switch, Route} from 'react-router-dom';
 import Character from './components/Character';
 import {fetchCharacters} from './services/Fetch';
-import gryffindor from './images/gryffindor.jpg';
-import slytherin from './images/slytherin.jpg';
-import hufflepuff from './images/hufflepuff.jpg';
-import ravenclaw from './images/ravenclaw.jpg';
+import gryffindor from './images/gryffindor.png';
+import slytherin from './images/slytherin.png';
+import hufflepuff from './images/hufflepuff.png';
+import ravenclaw from './images/ravenclaw.png';
+import logo from './images/logo.png';
 
 
 class App extends React.Component {
@@ -62,7 +63,9 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <h1 className="title">Harry Potter characters</h1>
+        <h1 className="title">
+          <img src={logo} alt="harry potter" className="logo"/>
+        </h1>
         <Switch>
         <Route exact path="/" render= {() => 
             <Home info={this.state} handleSearch={this.handleSearch} />

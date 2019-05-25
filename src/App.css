@@ -4,5 +4,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(./images/wall.jpg);
+  background-size: contain;
+}
+
+.title {
+  margin: 0;
+}
+.logo {
+  width: 40vw;
 }
 
