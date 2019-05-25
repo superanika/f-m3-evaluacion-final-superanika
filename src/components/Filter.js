@@ -7,7 +7,7 @@ class Filter extends React.Component {
         const {info}= this.props;
         return (
             <div className="filter">
-                <label htmlFor="search" className="label hidden"><span role="img" aria-label="magnifying glass icon for search field">🔎</span></label>
+                <label htmlFor="search" className="label"><span role="img" aria-label="magnifying glass icon for search field">🔎</span></label>
                 <input id="search "type="text" className="search" value={info.userSearch} onChange={this.props.handleSearch} placeholder="Búsqueda por nombre"/>
             </div>
         );

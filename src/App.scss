@@ -12,6 +12,11 @@
   margin: 0;
 }
 .logo {
-  width: 40vw;
+  width: 70vw;
+  margin-top: 10px;
+  @media all and (min-width: 768px) {
+    width: 40vw;
+
+  }
 }
 

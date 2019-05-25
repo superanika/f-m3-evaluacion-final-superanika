@@ -1,8 +1,7 @@
-
 .list {
     list-style: none;
     padding: 0;
-    margin: 10px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 245px;
     grid-gap: 10px;
@@ -15,33 +14,41 @@
     }   
 }
 
-
 .item__info {
-    height: 442px;
+    height: 410px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
     text-decoration: none;
     color: black;
-
+    margin-bottom: 50px;
 }
+
 .image__container {
-    border: 15px solid rgb(75, 57, 10);
+    border: 15px solid rgb(57, 41, 3);
     width: 163px;
     height: 227px;
     background-size: cover;
     background-position: center;
 }
+
+.image__container:hover {
+    width: 183px;
+    height: 247px;
+}
+
 .item__img {
     height: 0;
     width: 0;
 }
+
 .house__shield {
     height: 50px;
     width: 50px;
 }
+
 .house__img{
     height: 50px;
     width: 50px;
@@ -51,34 +58,39 @@
     font-size: 20px;
     margin-bottom: 0;
 }
+
 .character__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 2px solid black;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.6);
     width: 220px;
     color: white;
 }
+
 .Slytherin {
     border: 2px solid lightgray;
-    background-color: darkgreen;
+    background-color: rgba(0, 100, 0, 0.6);
 
 }
+
 .Gryffindor {
     border: 2px solid goldenrod;
-    background-color: darkred;
+    background-color: rgba(139, 0, 0, 0.6);
 }
+
 .Ravenclaw {
     border: 2px solid lightgray;
-    background-color: darkblue;
-
+    background-color: rgba(0, 0, 139, 0.6);
 }
+
 .Hufflepuff {
     border: 2px solid black;
-    background-color: goldenrod;
+    background-color: rgba(218, 165, 32, 0.6);
 }
+
 .item__house {
     margin-top: 0;
 }

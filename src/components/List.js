@@ -29,7 +29,7 @@ class List extends React.Component {
                               <img className="house__img" src={item.houseImg} alt={item.house} />
                               : null }
                         </div>
-                        <p className="item__house">{item.house ? `Casa: ${item.house}`: 'No pertenece a ninguna casa'}</p>
+                        <p className="item__house">{item.house ? `${item.house}`: 'No pertenece a ninguna casa'}</p>
                       </div>
                     </Link>
                     </li> 
