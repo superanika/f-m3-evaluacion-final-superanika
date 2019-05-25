@@ -27,6 +27,9 @@
     margin: 15px 0;
     padding: 5px;
     width: 200px;
+    &:hover {
+        background-color: rgb(247, 201, 83);
+    }
 }
 .detail-img__container {
     box-sizing: border-box;
@@ -75,4 +78,31 @@
 }
 .dead {
     font-size: 22px;
+    display: block;
+}
+.item__status {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item__alive {
+    margin-bottom: 0;
+}
+@keyframes heartBeat {
+    from {
+      font-size: 22px;
+    }
+    to {
+      font-size: 27px;
+    }
+  }
+  .alive {
+    width: 30px;
+    height: 30px;
+    display: block;
+    font-size: 22px;
+    animation-name: heartBeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
