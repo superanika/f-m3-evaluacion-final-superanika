@@ -1,5 +1,5 @@
 .wrapper {
-    height: 80vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +28,6 @@
     padding: 5px;
     width: 200px;
 }
-
 .detail-img__container {
     box-sizing: border-box;
     border: 1px solid black;
@@ -36,6 +35,9 @@
     height: 250px;
     background-size: cover;
     background-position: center;
+    @media all and (min-width: 768px) {
+        height: 280px;
+    }
 }
 .detail__info {
     box-sizing: border-box;
@@ -55,23 +57,18 @@
         height: 280px;
     }
 }
-
 .Slytherin {
     border: 2px solid lightgray;
     background-color: rgba(0, 100, 0, 0.6);
-
 }
-
 .Gryffindor {
     border: 2px solid goldenrod;
     background-color: rgba(139, 0, 0, 0.6);
 }
-
 .Ravenclaw {
     border: 2px solid lightgray;
     background-color: rgba(0, 0, 139, 0.6);
 }
-
 .Hufflepuff {
     border: 2px solid black;
     background-color: rgba(218, 165, 32, 0.6);
