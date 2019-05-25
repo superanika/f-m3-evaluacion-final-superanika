@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.d9750025.chunk.css",
+    "main.css": "./static/css/main.acf7070e.chunk.css",
     "main.js": "./static/js/main.a7fa0c71.chunk.js",
     "main.js.map": "./static/js/main.a7fa0c71.chunk.js.map",
     "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
@@ -8,9 +8,9 @@
     "static/js/2.0acd2cd1.chunk.js": "./static/js/2.0acd2cd1.chunk.js",
     "static/js/2.0acd2cd1.chunk.js.map": "./static/js/2.0acd2cd1.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.d2fb91318c3512c4753a6882fbb900f4.js": "./precache-manifest.d2fb91318c3512c4753a6882fbb900f4.js",
+    "precache-manifest.a8318a9f338f7f4edfdc5e1d80a2b80a.js": "./precache-manifest.a8318a9f338f7f4edfdc5e1d80a2b80a.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.d9750025.chunk.css.map": "./static/css/main.d9750025.chunk.css.map",
+    "static/css/main.acf7070e.chunk.css.map": "./static/css/main.acf7070e.chunk.css.map",
     "static/media/gryffindor.png": "./static/media/gryffindor.3fede02e.png",
     "static/media/hufflepuff.png": "./static/media/hufflepuff.558cd658.png",
     "static/media/logo.png": "./static/media/logo.e686bead.png",
