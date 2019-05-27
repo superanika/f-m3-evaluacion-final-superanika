@@ -17,10 +17,12 @@ class App extends React.Component {
     super(props);
     this.state = {
       characters : [],
-      userSearch : ''
+      userSearch : '',
+      userSelect : ''
     }
     this.getCharacters = this.getCharacters.bind(this);
     this.handleSearch = this.handleSearch.bind(this);
+    this.handleSelect = this.handleSelect.bind(this);
   }
 
   getCharacters() {
@@ -59,6 +61,14 @@ class App extends React.Component {
     })
   }
 
+  handleSelect (event) {
+    const selectValue = event.currentTarget.value;
+    this.setState ({
+      userSelect : selectValue
+    })
+  }
+  
+
   render () {
 
     return (
@@ -68,7 +78,7 @@ class App extends React.Component {
         </h1>
         <Switch>
         <Route exact path="/" render= {() => 
-            <Home info={this.state} handleSearch={this.handleSearch} />
+            <Home info={this.state} handleSearch={this.handleSearch} handleSelect= {this.handleSelect}/>
         } />
             <Route path="/Character/:id" render={routerProps => (
                 <Character match={routerProps.match} info={this.state}/> 

@@ -6,10 +6,10 @@ import PropTypes from 'prop-types';
 
 class Home extends React.Component {
     render() {
-      const {info, handleSearch} = this.props;
+      const {info, handleSearch, handleSelect} = this.props;
         return (
             <div className="home">
-                <Filter handleSearch={handleSearch} info={info}/>
+                <Filter handleSearch={handleSearch} handleSelect={handleSelect} info={info}/>
                 <List info={info}/>
             </div>
         );

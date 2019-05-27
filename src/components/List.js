@@ -7,10 +7,22 @@ class List extends React.Component {
        
     render () {
         const {info} = this.props;
-        const filtedArray =  info.characters.filter(item => {
+        const filtedArray = info.characters
+        .filter(item => {
           return (
             item.name.toLowerCase().includes(info.userSearch.toLowerCase())
              );})
+            .filter(item => {
+              if(info.userSelect === 'casa') {
+                return item;
+              }else if (info.userSelect === "sinCasa"){
+                return item.house === "";
+              }else {
+                return (
+                  item.house.includes(info.userSelect)
+                );
+              }
+            })
             .map(item => {
               return (
                 <li key={item.id} className="list__item" >
