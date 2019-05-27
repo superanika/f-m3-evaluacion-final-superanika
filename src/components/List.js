@@ -7,35 +7,33 @@ class List extends React.Component {
        
     render () {
         const {info} = this.props;
-
+        const filtedArray =  info.characters.filter(item => {
+          return (
+            item.name.toLowerCase().includes(info.userSearch.toLowerCase())
+             );})
+            .map(item => {
+              return (
+                <li key={item.id} className="list__item" >
+                  <Link to= {`/Character/${item.id}`} className="item__info">
+                    <div className="image__container" style={{backgroundImage: `url(${item.image})`}}>
+                        <img src={item.image} alt={item.name} className="item__img"/>
+                    </div>
+                  <div className={`character__info ${item.house}`}>
+                    <h2 className="item__name">{item.name}</h2>
+                    <div className="house__shield">
+                    {item.houseImg ? 
+                          <img className="house__img" src={item.houseImg} alt={item.house} />
+                          : null }
+                    </div>
+                    <p className="item__house">{item.house ? `${item.house}`: 'No pertenece a ninguna casa'}</p>
+                  </div>
+                </Link>
+                </li> 
+              );});
+        
         return (
             <ul className="list">
-              {info.characters.filter(item => {
-                return (
-                  item.name.toLowerCase().includes(info.userSearch.toLowerCase())
-                );
-              })
-              .map(item => {
-                  return (
-                    <li key={item.id} className="list__item" >
-                      <Link to= {`/Character/${item.id}`} className="item__info">
-                        <div className="image__container" style={{backgroundImage: `url(${item.image})`}}>
-                            <img src={item.image} alt={item.name} className="item__img"/>
-                        </div>
-                      <div className={`character__info ${item.house}`}>
-                        <h2 className="item__name">{item.name}</h2>
-                        <div className="house__shield">
-                        {item.houseImg ? 
-                              <img className="house__img" src={item.houseImg} alt={item.house} />
-                              : null }
-                        </div>
-                        <p className="item__house">{item.house ? `${item.house}`: 'No pertenece a ninguna casa'}</p>
-                      </div>
-                    </Link>
-                    </li> 
-                  );
-                })
-              }
+             {filtedArray.length === 0 && info.userSearch !== "" ? <div className="noFound__wrapper"><p className="noFound">Tu búsqueda no ha obtenido resultados</p></div> : filtedArray}
             </ul>
         );
     }
