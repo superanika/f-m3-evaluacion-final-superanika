@@ -27,7 +27,7 @@ La estructura del proyecto es el siguiente:
    |- App.scss
    |- index.js
    |- index.css
-   
+ ```  
    
 
 
