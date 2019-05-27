@@ -25,7 +25,7 @@ class Character extends React.Component {
                                              : null }
                                     </div>
                                     <p className="item__house">{item.house ? `Casa: ${item.house}`: 'No pertenece a ninguna casa'}</p>
-                                    <p className="item__birth">Año de nacimiento: {item.yearOfBirth} </p>
+                                    <p className="item__birth">Año de nacimiento: {item.yearOfBirth ? item.yearOfBirth : '?'} </p>
                                     <p className="item__patronus">Patronus: {item.patronus ? item.patronus : "No tiene patronus"} </p>
                                     <div className="item__status">
                                         <p className="item__alive">Estado:  </p>
