@@ -35,9 +35,9 @@
     box-sizing: border-box;
     border: 1px solid black;
     width: 240px;
-    height: 250px;
+    height: 280px;
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     @media all and (min-width: 768px) {
         height: 280px;
     }
