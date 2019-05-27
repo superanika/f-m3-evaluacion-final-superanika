@@ -9,7 +9,7 @@ class Filter extends React.Component {
             <div className="filter">
                 <label htmlFor="search" className="label"><span role="img" aria-label="magnifying glass icon for search field">🔎</span></label>
                 <input id="search "type="text" className="search" value={info.userSearch} onChange={handleSearch} placeholder="Búsqueda por nombre"/>
-                <select name="houses" id="houses" onChange={handleSelect} value={info.userSelect}>
+                <select name="houses" className="houses" onChange={handleSelect} value={info.userSelect}>
                     <option value="casa">Selecciona la casa</option>
                     <option value="Gryffindor">Gryffindor</option>
                     <option value="Slytherin">Slytherin</option>
