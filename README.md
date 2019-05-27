@@ -10,7 +10,7 @@ https://github.com/Adalab/f-m3-evaluacion-final-superanika.git
 Una vez tengas clonado el repositorio en tu ordenador, abre la carpeta en la terminal y ejecuta el comando "npm start".
 
 La estructura del proyecto es el siguiente:
-
+```
 /
 `- src
    |- components
